@@ -2,3 +2,103 @@
   color: #000;
   background-color: #ddd;
 }
+.font-grey {
+	color: #666;
+}
+.font-green {
+	color: #6bbd42;
+}
+.font-orange {
+	color: #f76339;
+}
+.circle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #f76339; 
+}
+.font-red {
+	color: #ff0000;
+}
+.font-white {
+	color: #fff;
+}
+.title {
+	font-family: Helvetica;
+	font-size: 18px;
+}
+.device-title {
+	font-family: Helvetica;
+	font-size: 14px;
+}
+.device-number {
+	font-family: Helvetica;
+	font-size: 28px;
+}
+.sub-title {
+	font-family: Helvetica;
+	font-size: 11px;
+}
+.text {
+	font-family: Helvetica;
+	font-size: 11px;
+}
+.progress-height-10 {
+	height: 10px;
+}
+.bold {
+	font-weight: bold;
+}
+.bolder {
+	font-weight: bolder;
+}
+.lighter {
+	font-weight: lighter;
+}
+.pad-left-15 {
+	padding-left: 15px;
+}
+.pad-right-15 {
+	padding-right: 15px;
+}
+.pad-top-15 {
+	padding-top: 15px;
+}
+.pad-bottom-15 {
+	padding-bottom: 15px;
+}
+.margin-left-15 {
+	margin-left: 15px;
+}
+.margin-right-15 {
+	margin-right: 15px;
+}
+.margin-bottom-15 {
+	margin-bottom: 15px;
+}
+.margin-top-15 {
+	margin-top: 15px;
+}
+.margin-left-5 {
+	margin-left: 5px;
+}
+.margin-right-5 {
+	margin-right: 5px;
+}
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.margin-top-5 {
+	margin-top: 5px;
+}
+.margin-top-neg-15 {
+	margin-top: -15px;
+}
+.border-left {
+	border-left: 1px solid #ccc;
+}
+hr {
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 6px 6px -6px rgba(0,0,0,.25);
+}

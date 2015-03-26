@@ -20,112 +20,173 @@
   </head>
   <body>
     <div class='container'>
+        <div class='row'><div class='col-md-12'><br></div></div>
       <div class='row'>
-        <div class='col-md-3 bg-primary'>
-          <div class='row'>
-            <h4>Jennifer Ash</h4>
-            <h5>CUSTOMER SINCE 08/2013</h5>
-            <h5><b>AUTHORIZED USERS:</b></h5>
-            <h6>None</h6>
-            <h5><b>OTHER AT&T SERVICES:</b></h5>
-            <h6>None</h6>
-          </div>
-          <div class='row'>
-            <h5><b>BILLING ACCT NUMBER:</b> 188068967600</h5>
-            <h5><b>ACCT TYPE:</b> IRU</h5>
-            <h5><b>ONLINE ACCT:</b> Yes</h5>
-            <h5><b>PAYMENT TYPE:</b> AutoPay DIRECT DEBIT</h5>
-            <h5><b>BILLING TYPE:</b> Paper</h5>
-          </div>
-          <div class='row'>
-            <h5><b>INSTALLMENT PLANS:</b></h5>
-          </div>
-          <div class='row'>
-            <h5><b>LAST BILL AMOUNT:</b></h5>
-            <h4>$0.00</h4>
-            <h6>Bill Due Date: 03/22/2015</h6>
-            <h5><b>LAST ADJUSMENT:</b></h5>
-            <h6>None</h6>
-            <button type="button" class="btn btn-info">View Account Details</button>
+        <div class='col-md-3  pad-bottom-15'>
+          <div class='panel panel-default'>
+            <div class='panel-heading'>
+              
+                <span class='title'>Jennifer Ash</span>
+            </div>
+            <div class='panel-body'>
+              <span class='sub-title bold font-grey'>CUSTOMER SINCE 08/2013</span><br>
+              <span class='sub-title bold'>AUTHORIZED USERS:</span><br>
+              <span class='text lighter font-grey'>None</span><br>
+              <span class='sub-title bold'>OTHER AT&T SERVICES:</span><br>
+              <span class='text lighter font-grey'>None</span><br>
+              
+              <div class='row'>
+                <hr>
+              </div>
+              <div class='row pad-left-15 margin-top-neg-15'>
+                 <span class='sub-title bold'>BILLING ACCT NUMBER: </span><span class='text lighter font-grey'>188068967600</span><br>
+                 <span class='sub-title bold'>ACCT TYPE: </span><span class='text lighter font-grey'>IRU</span><br>
+                 <span class='sub-title bold'>ONLINE ACCT: </span><span class='text lighter font-grey'>Yes</span><br>
+                 <span class='sub-title bold'>PAYMENT TYPE: </span><span class='text lighter font-grey'>AutoPay DIRECT DEBIT</span><br>
+                 <span class='sub-title bold'>BILLING TYPE </span><span class='text lighter font-grey'>Paper</span><br>
+              </div>
+              <div class='row'>
+                <hr>
+              </div>
+              <div class='row pad-left-15 margin-top-neg-15'>
+                <span class='sub-title bold'>INSTALLMENT PLANS: </span><span class='text lighter font-grey'></span><br>
+              </div>
+              <div class='row'>
+                <hr>
+              </div>
+              <div class='row pad-left-15'>
+                <span class='sub-title bold'>LAST BILL AMOUNT</span><br>
+                <span class='title bold font-green'>$0.00</span><br>
+                <span class='text lighter font-grey'>Bill Due Date: 03/22/2015</span><br>
+                <span class='sub-title bold'>LAST ADJUSTMENT</span><br>
+                <span class='text lighter font-grey'>None</span><br>
+                <button type="button" class="btn btn-info margin-left-15 margin-top-15">View Account Details</button>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class='col-md-9'>
-          <div class='row bg-primary'>
-              <h4>Contacts in last 30 days (0)</h4>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="title">Contacts in last 30 days (0)</span>
+            </div>
+            <div class="panel-body">
+              <div class="progress margin-top-15">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                 <span class="sr-only">40% Complete (success)</span>
+               </div>
+             </div>
+            </div>
           </div>
-          <div class='row'>
-            timeline goes here. <br><br>
-          </div>
-          <div class='col-md-9'>
-              <div class='row bg-primary'>
-                <h4>Devices (1)</h4>
-                <h6>Device selection can display up to 15 devices.</h6>
-              </div>
+        </div>
+        <div class='col-md-6'>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="title">Devices (1)</span><br>
+              <span class='text lighter'>Device selection can display up to 15 devices</span>
+            </div>
+            <div class="panel-body">
               <div class='row'>
-                  <div class='col-md-5'>
-                    <h5>Samsung Galaxy S4</h5>
-                    <img src='http://ecx.images-amazon.com/images/I/41Lq6GIxQ1L._SL500_AA300_.jpg' style='max-height: 100px; max-width: 100px;'></img>
-                    <h6><b>Android</b></h6>
-                    <h6><b>CTN: 231-620-0919</b></h6>
-                    <h6><b>IMEI: 356567056814732</b></h6>
-                    <h6><b>Contract Ends:</b> 08/27/2015</h6>
+                  <div class='col-md-5 text-center'>
+                    <span class='device-title'>Samsung Galaxy S4</span><br>
+                    <img class='margin-top-15' align='center' src='http://ecx.images-amazon.com/images/I/41Lq6GIxQ1L._SL500_AA300_.jpg' style='max-height: 100px; max-width: 100px;'></img><br>
+                    <span class='sub-title bold'>Android</span><br>
+                    <span class='sub-title bold font-orange'>CTN: 231-620-0919</span><br>
+                    <span class='sub-title bold'>IMEI: 356567056814732</span><br>
+                    <span class='sub-title bold'>Contract Ends: </span><span class='text lighter'>08/27/2015</span><br>
                   </div>
 
-                  <div class='col-md-7'>
-                      <h5>Nation 450 with Rollover</h5>
-                      <h6>Billing Cycle</h6>
-                      <h6>03/01/2015-03/28/2015</h6>
-                      <h5>Meter</h5>
-                      <h6>Talk</h6>
-                      <h5>Meter</h5>
-                      <h6>Messaging</h6>
-                      <h5>Meter</h5>
-                      <h6>Data</h6>
-                      <h5>Meter</h5>
-                      <h5>View Usage Details</h5>
+                  <div class='col-md-7 border-left'>
+                      <span class='device-title'>Nation 450 with Rollover</span><br>
+                      <span class='text lighter'>Billing Cycle</span><br>
+                      <span class='text lighter'>03/03/2015 - 03/28/2015</span><br>
+                      <div class="progress progress-height-10">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                          <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                      </div>
+                      <span class='text lighter'>Talk</span><br>
+                      <div class="progress progress-height-10">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                          <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                      </div>
+                      <span class='text lighter'>Messaging</span><br>
+                      <div class="progress progress-height-10">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                          <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                      </div>
+                      <span class='text lighter'>Data</span><br>
+                      <div class="progress progress-height-10">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                          <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                      </div>
+                      
                   </div>
               </div>
               <div class='row'>
-                  <div class='col-md-3'>
-                      <h5>Upgrade Eligible</h5>
-                      <h5>Yes</h5>
-                      <h5>View All Devices</h5>
+                <hr>
+              </div>
+              <div class='row'>
+                  <div class='col-md-3 text-center'>
+                      <span class='sub-title bold'>Upgrade Eligible</span><br>
+                      <span class='sub-title bold font-green'>Yes</span><br>
+                      <span class='sub-title bold'>View All Devices</span><br>
                   </div>
-                  <div class='col-md-3'>
-                      <h5>Standard</h5>
-                      <h5>Early</h5>
-                      <h5>Installment</h5>
-                      <h5>Shared</h5>
+                  <div class='col-md-4 border-left'>
+                    <div class='row'>
+                      <div class='col-md-5'>
+                        <span class='text bold'>Standard</span><br>
+                        <span class='text bold'>Early</span><br>
+                        <span class='text bold'>Installment</span><br>
+                        <span class='text bold'>Shared</span><br>
+                      </div>
+                      <div class='col-md-2'>
+                        <span class='glyphicon glyphicon-ok font-green'></span>
+                        <span class='glyphicon glyphicon-remove font-red'></span>
+                        <span class='glyphicon glyphicon-ok font-green'></span>
+                        <span class='glyphicon glyphicon-ok font-green'></span>
+                      </div>
+                      <div class='col-md-5'>
+                        <span class='text lighter'>08/28/2015</span><br>
+                        <span></span><br>
+                        <span></span><br>
+                        <span></span><br>
+                      </div>
+                    </div>
                   </div>
-                  <div class='col-md-3'>
-                      <h5>Warranty Expired</h5>
-                      <h5>09/09/2014</h5>
+                  <div class='col-md-2 text-center border-left'>
+                      <span class='text bold'>Warranty Expired</span><br>
+                      <span class='text bold'>09/09/2014</span>
                   </div>
-                  <div class='col-md-3'>
-                      <h5>Insurance Coverage</h5>
-                      <h5>Early</h5>
+                  <div class='col-md-3 text-center border-left'>
+                      <span class='text bold'>Insurance Coverage</span><br>
+                      <span class='text bold'>AT&T</span><span class='glyphicon glyphicon-ok font-green'></span>
                   </div>
               </div>
             </div>
-            <div class='col-md-3'>
-              <div class='row'>
-                <h4>Device Notices (13)</h4>
-                <h5>Line Information</h5>
-                <h5>User Reported Network Info</h5>
-                <h5>Device Alerts</h5>
-              </div>
-              <div class='row'>
-                <h4>Account Notices (1)</h4>
-                <h5>Open Items</h5>
-                <h5>Outbound Offers</h5>
+          </div>
+        </div>
+        <div class='col-md-3'>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <span class="title">Device Notices (13)</span>
+            </div>
+            <div class='col-md-2'>
+              <div class="panel-body text-center">
+                <div class='circle device-number font-white'>3</div>
               </div>
             </div>
-
-
+          </div>
+        
         </div>
 
-      </div>
+              
+
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
