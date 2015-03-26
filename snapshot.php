@@ -175,13 +175,60 @@
             <div class="panel-heading">
               <span class="title">Device Notices (13)</span>
             </div>
+            <div class='row'>
+              <div class='col-md-2'>
+                <div class="panel-body text-center">
+                  <div class='circle device-number font-white pad-top-1'>3</div>
+                </div>
+              </div>
+              <div class='col-md-10'>
+                <div class="panel-body text-left">
+                  <div class='text bold pad-top-10'>Some text</div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-2'>
+                <div class="panel-body text-center">
+                  <div class='circle device-number font-white pad-top-1'>3</div>
+                </div>
+              </div>
+              <div class='col-md-10'>
+                <div class="panel-body text-left">
+                  <div class='text bold pad-top-10'>Some text</div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <span class="title">Device Notices (13)</span>
+          </div>
+          <div class='row'>
             <div class='col-md-2'>
               <div class="panel-body text-center">
-                <div class='circle device-number font-white'>3</div>
+                <div class='circle device-number font-white pad-top-1'>3</div>
+              </div>
+            </div>
+            <div class='col-md-10'>
+              <div class="panel-body text-left">
+                <div class='text bold pad-top-10'>Some text</div>
               </div>
             </div>
           </div>
-        
+          <div class='row'>
+            <div class='col-md-2'>
+              <div class="panel-body text-center">
+                <div class='circle device-number font-white pad-top-1'>3</div>
+              </div>
+            </div>
+            <div class='col-md-10'>
+              <div class="panel-body text-left">
+                <div class='text bold pad-top-10'>Some text</div>
+              </div>
+            </div>
+          </div>  
+        </div>
         </div>
 
               

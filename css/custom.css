@@ -13,8 +13,8 @@
 }
 .circle {
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-color: #f76339; 
 }
 .font-red {
@@ -33,7 +33,7 @@
 }
 .device-number {
 	font-family: Helvetica;
-	font-size: 28px;
+	font-size: 26px;
 }
 .sub-title {
 	font-family: Helvetica;
@@ -55,6 +55,9 @@
 .lighter {
 	font-weight: lighter;
 }
+.pad-top-1 {
+	padding-top: 1px;
+}
 .pad-left-15 {
 	padding-left: 15px;
 }
@@ -66,6 +69,9 @@
 }
 .pad-bottom-15 {
 	padding-bottom: 15px;
+}
+.pad-top-10 {
+	padding-top: 10px;
 }
 .margin-left-15 {
 	margin-left: 15px;
