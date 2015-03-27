@@ -60,7 +60,7 @@
                 <span class='text lighter font-grey'>Bill Due Date: 03/22/2015</span><br>
                 <span class='sub-title bold'>LAST ADJUSTMENT</span><br>
                 <span class='text lighter font-grey'>None</span><br>
-                <button type="button" class="btn btn-info margin-left-15 margin-top-15">View Account Details</button>
+                <a href="account.php" class="btn btn-info margin-left-15 margin-top-15" role="button">View Account Details</a>
               </div>
             </div>
           </div>
@@ -83,7 +83,18 @@
         <div class='col-md-6'>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <span class="title">Devices (1)</span><br>
+              <span class="title">Devices (1)</span>
+                <div class="dropdown float-right">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    231-620-0919 - Samsung Galaxy S4
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">231-620-8888 - Samsung Galaxy S3</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">231-620-0917 - Samsung Galaxy S4</a></li>
+                  </ul>
+                </div>
+              <br>
               <span class='text lighter'>Device selection can display up to 15 devices</span>
             </div>
             <div class="panel-body">
@@ -100,30 +111,36 @@
                   <div class='col-md-7 border-left'>
                       <span class='device-title'>Nation 450 with Rollover</span><br>
                       <span class='text lighter'>Billing Cycle</span><br>
-                      <span class='text lighter'>03/03/2015 - 03/28/2015</span><br>
+                      <span class='text lighter'>03/03/2015 - 03/28/2015</span>
+                      <span class='text bold float-right'>3 days left</span><br>
                       <div class="progress progress-height-10">
                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                           <span class="sr-only">40% Complete (success)</span>
                         </div>
                       </div>
-                      <span class='text lighter'>Talk</span><br>
+                      <span class='text lighter'>Talk</span>
+                      <span class='text bold float-right'>4,712 left</span><br>
                       <div class="progress progress-height-10">
                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                           <span class="sr-only">40% Complete (success)</span>
                         </div>
                       </div>
-                      <span class='text lighter'>Messaging</span><br>
+                      <span class='text lighter'>Messaging</span>
+                      <span class='text bold float-right'>Unlimited</span><br>
                       <div class="progress progress-height-10">
                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                           <span class="sr-only">40% Complete (success)</span>
                         </div>
                       </div>
-                      <span class='text lighter'>Data</span><br>
+                      <span class='text lighter'>Data</span>
+                      <span class='text bold float-right'>No Usage Returned</span><br>
                       <div class="progress progress-height-10">
                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                           <span class="sr-only">40% Complete (success)</span>
-                        </div>
+                        </div><br>
                       </div>
+                      <span class='text bold'><a href='usage.php'>View Usage Details</a></span>
+                      
                       
                   </div>
               </div>
@@ -134,7 +151,7 @@
                   <div class='col-md-3 text-center'>
                       <span class='sub-title bold'>Upgrade Eligible</span><br>
                       <span class='sub-title bold font-green'>Yes</span><br>
-                      <span class='sub-title bold'>View All Devices</span><br>
+                      <span class='sub-title bold'><a href='upgrades.php'>View All Devices</a></span><br>
                   </div>
                   <div class='col-md-4 border-left'>
                     <div class='row'>
@@ -178,58 +195,72 @@
             <div class='row'>
               <div class='col-md-2'>
                 <div class="panel-body text-center">
-                  <div class='circle device-number font-white pad-top-1'>3</div>
+                  <div class='circle device-number font-white bg-orange'>3</div>
                 </div>
               </div>
               <div class='col-md-10'>
                 <div class="panel-body text-left">
-                  <div class='text bold pad-top-10'>Some text</div>
+                  <div class='text bold pad-top-10'><a href='line.php'>Line Information</a></div>
                 </div>
               </div>
             </div>
             <div class='row'>
               <div class='col-md-2'>
                 <div class="panel-body text-center">
-                  <div class='circle device-number font-white pad-top-1'>3</div>
+                  <div class='circle device-number bg-grey'>0</div>
                 </div>
               </div>
               <div class='col-md-10'>
                 <div class="panel-body text-left">
-                  <div class='text bold pad-top-10'>Some text</div>
+                  <div class='text bold pad-top-10'>User Reported Network Info</div>
                 </div>
               </div>
             </div>  
+            <div class='row'>
+              <div class='col-md-2'>
+                <div class="panel-body text-center">
+                  <div class='circle device-number font-white bg-orange'>10</div>
+                </div>
+              </div>
+              <div class='col-md-10'>
+                <div class="panel-body text-left">
+                  <div class='text bold pad-top-10'><a href='device.php'>Device Alerts</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <span class="title">Device Notices (13)</span>
+            <span class="title">Account Notices (1)</span>
           </div>
           <div class='row'>
             <div class='col-md-2'>
               <div class="panel-body text-center">
-                <div class='circle device-number font-white pad-top-1'>3</div>
+                <div class='circle device-number bg-grey'>0</div>
               </div>
             </div>
             <div class='col-md-10'>
               <div class="panel-body text-left">
-                <div class='text bold pad-top-10'>Some text</div>
+                <div class='text bold pad-top-10'>Open Items</div>
               </div>
             </div>
+            <hr>
           </div>
+          
           <div class='row'>
             <div class='col-md-2'>
               <div class="panel-body text-center">
-                <div class='circle device-number font-white pad-top-1'>3</div>
+                <div class='circle device-number font-white bg-orange'>1</div>
               </div>
             </div>
             <div class='col-md-10'>
               <div class="panel-body text-left">
-                <div class='text bold pad-top-10'>Some text</div>
+                <div class='text bold pad-top-10'>Outbound Offers</div>
               </div>
             </div>
           </div>  
         </div>
-        </div>
+      </div>
 
               
 
