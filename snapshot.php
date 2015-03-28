@@ -1,3 +1,47 @@
+<?
+  
+  //session_start();
+  include('./include/include.inc');
+  include('./include/library.php');
+
+  /*if(isset($_SESSION['auth'])) {
+      check_login($conn);
+    } else {
+      header('Location: logout.php');
+      exit;
+    }*/
+
+  $ctn = 1325468462;
+
+  $account = get_customer($conn,$ctn);
+
+  $name = $account[0]['name'];
+  $birthday = date('m/d/Y', strtotime($account[0]['birthday']));
+  $account_no = $account[0]['account_no'];
+  $account_type = $account[0]['account_type'];
+  $online = $account[0]['online'];
+  $payment_type = $account[0]['payment_type'];
+  $billing_type = $account[0]['billing_type'];
+  $installment_plans = $account[0]['installment_plans'];
+  $last_bill_amount = $account[0]['last_bill_amount'];
+  $bill_due_date = date('m/d/Y', strtotime($account[0]['bill_due_date']));
+
+  $minutes_left = $account[0]['minutes_left'];
+  $minutes_total = $account[0]['minutes_total'];
+  $minutes_percent = $minutes_left / $minutes_total;
+
+  $messaging = $account[0]['messaging'];
+
+  if($messaging == 99999) {
+    $messaging_text = 'Unlimited';
+    $messaging_percent = 100;
+  } else {
+    $messaging_text = $messaging;
+  }
+  
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,10 +70,10 @@
           <div class='panel panel-default'>
             <div class='panel-heading'>
               
-                <span class='title'>Jennifer Ash</span>
+                <span class='title'><? echo $name; ?></span>
             </div>
             <div class='panel-body'>
-              <span class='sub-title bold font-grey'>CUSTOMER SINCE 08/2013</span><br>
+              <span class='sub-title bold font-grey'>CUSTOMER SINCE <? echo $birthday; ?></span><br>
               <span class='sub-title bold'>AUTHORIZED USERS:</span><br>
               <span class='text lighter font-grey'>None</span><br>
               <span class='sub-title bold'>OTHER AT&T SERVICES:</span><br>
@@ -39,25 +83,25 @@
                 <hr>
               </div>
               <div class='row pad-left-15 margin-top-neg-15'>
-                 <span class='sub-title bold'>BILLING ACCT NUMBER: </span><span class='text lighter font-grey'>188068967600</span><br>
-                 <span class='sub-title bold'>ACCT TYPE: </span><span class='text lighter font-grey'>IRU</span><br>
-                 <span class='sub-title bold'>ONLINE ACCT: </span><span class='text lighter font-grey'>Yes</span><br>
-                 <span class='sub-title bold'>PAYMENT TYPE: </span><span class='text lighter font-grey'>AutoPay DIRECT DEBIT</span><br>
-                 <span class='sub-title bold'>BILLING TYPE </span><span class='text lighter font-grey'>Paper</span><br>
+                 <span class='sub-title bold'>BILLING ACCT NUMBER: </span><span class='text lighter font-grey'><? echo $account_no; ?></span><br>
+                 <span class='sub-title bold'>ACCT TYPE: </span><span class='text lighter font-grey'><? echo $account_type; ?></span><br>
+                 <span class='sub-title bold'>ONLINE ACCT: </span><span class='text lighter font-grey'><? echo $online; ?></span><br>
+                 <span class='sub-title bold'>PAYMENT TYPE: </span><span class='text lighter font-grey'><? echo $payment_type; ?></span><br>
+                 <span class='sub-title bold'>BILLING TYPE </span><span class='text lighter font-grey'><? echo $billing_type; ?></span><br>
               </div>
               <div class='row'>
                 <hr>
               </div>
               <div class='row pad-left-15 margin-top-neg-15'>
-                <span class='sub-title bold'>INSTALLMENT PLANS: </span><span class='text lighter font-grey'></span><br>
+                <span class='sub-title bold'>INSTALLMENT PLANS: </span><span class='text lighter font-grey'><? echo $installment_plans; ?></span><br>
               </div>
               <div class='row'>
                 <hr>
               </div>
               <div class='row pad-left-15'>
                 <span class='sub-title bold'>LAST BILL AMOUNT</span><br>
-                <span class='title bold font-green'>$0.00</span><br>
-                <span class='text lighter font-grey'>Bill Due Date: 03/22/2015</span><br>
+                <span class='title bold font-green'>$<? echo $last_bill_amount; ?></span><br>
+                <span class='text lighter font-grey'>Bill Due Date: <? echo $bill_due_date; ?></span><br>
                 <span class='sub-title bold'>LAST ADJUSTMENT</span><br>
                 <span class='text lighter font-grey'>None</span><br>
                 <a href="account.php" class="btn btn-info margin-left-15 margin-top-15" role="button">View Account Details</a>
@@ -119,16 +163,16 @@
                         </div>
                       </div>
                       <span class='text lighter'>Talk</span>
-                      <span class='text bold float-right'>4,712 left</span><br>
+                      <span class='text bold float-right'><? echo $minutes_left; ?> left</span><br>
                       <div class="progress progress-height-10">
-                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <? echo $minutes_percent*100; ?>%">
                           <span class="sr-only">40% Complete (success)</span>
                         </div>
                       </div>
                       <span class='text lighter'>Messaging</span>
-                      <span class='text bold float-right'>Unlimited</span><br>
+                      <span class='text bold float-right'><? echo $messaging_text; ?></span><br>
                       <div class="progress progress-height-10">
-                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <? echo $messaging_percent; ?>%">
                           <span class="sr-only">40% Complete (success)</span>
                         </div>
                       </div>
