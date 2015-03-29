@@ -15,6 +15,7 @@
 
   $account = get_customer($conn,$ctn);
 
+  $id = $account[0]['id'];
   $name = $account[0]['name'];
   $birthday = date('m/d/Y', strtotime($account[0]['birthday']));
   $account_no = $account[0]['account_no'];
@@ -38,6 +39,10 @@
   } else {
     $messaging_text = $messaging;
   }
+
+  $devices = get_devices($conn,$id);
+
+  
   
 
 ?>
@@ -134,8 +139,11 @@
                     <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">231-620-8888 - Samsung Galaxy S3</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">231-620-0917 - Samsung Galaxy S4</a></li>
+
+                    <?  foreach($devices AS $device) {
+                      echo '<li role="presentation"><a role="menuitem" tabindex="-1" href="#">'.$device["ctn"].' - Samsung Galaxy S3</a></li>';
+                    } ?>
+                    
                   </ul>
                 </div>
               <br>
@@ -315,5 +323,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $('#myTab a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+    </script>
+
   </body>
 </html>
