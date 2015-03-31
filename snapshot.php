@@ -11,7 +11,7 @@
       exit;
     }*/
 
-  $ctn = 1325468462;
+  $ctn = 2147483647;
 
   $account = get_customer($conn,$ctn);
 
@@ -325,9 +325,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $('#myTab a').click(function (e) {
-          e.preventDefault()
-          $(this).tab('show')
+        $('.dropdown-menu').click(function (e) {
+          e.preventDefault();
+          alert("YO");
+          //$(this).tab('show')
         })
     </script>
 
