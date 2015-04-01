@@ -151,7 +151,7 @@
             </div>
             <div class="panel-body">
               <div class='row'>
-                  <div class='col-md-5 text-center'>
+                  <div class='col-md-5 text-center id='samsung'>
                     <span class='device-title'>Samsung Galaxy S4</span><br>
                     <img class='margin-top-15' align='center' src='http://ecx.images-amazon.com/images/I/41Lq6GIxQ1L._SL500_AA300_.jpg' style='max-height: 100px; max-width: 100px;'></img><br>
                     <span class='sub-title bold'>Android</span><br>
@@ -325,9 +325,14 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+
+        
+
         $('.dropdown-menu').click(function (e) {
           e.preventDefault();
-          alert("YO");
+
+          $( "#samsung" ).toggle(display);
+          
           //$(this).tab('show')
         })
     </script>
