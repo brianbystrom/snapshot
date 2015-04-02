@@ -141,7 +141,7 @@
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 
                     <?  foreach($devices AS $device) {
-                      echo '<li role="presentation"><a role="menuitem" tabindex="-1" href="#">'.$device["ctn"].' - Samsung Galaxy S3</a></li>';
+                      echo '<li role="presentation"><a role="menuitem" tabindex="-1" href="#" onclick="toggler(\'myContent\');">'.$device["ctn"].' - Samsung Galaxy S3</a></li>';
                     } ?>
                     
                   </ul>
@@ -151,7 +151,7 @@
             </div>
             <div class="panel-body">
               <div class='row'>
-                  <div class='col-md-5 text-center id='samsung'>
+                  <div class='col-md-5 text-center tab-pane active' id='myContent'>
                     <span class='device-title'>Samsung Galaxy S4</span><br>
                     <img class='margin-top-15' align='center' src='http://ecx.images-amazon.com/images/I/41Lq6GIxQ1L._SL500_AA300_.jpg' style='max-height: 100px; max-width: 100px;'></img><br>
                     <span class='sub-title bold'>Android</span><br>
@@ -326,7 +326,10 @@
 
     <script>
 
-        
+        function toggler(divId) {
+            $("#" + divId).toggle();
+            alert(divId);
+        }
 
         $('.dropdown-menu').click(function (e) {
           e.preventDefault();
